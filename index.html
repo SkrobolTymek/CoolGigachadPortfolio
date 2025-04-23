@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio v2.0</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="boot-screen">
+    <div class="boot-line"></div>
+    <div class="boot-line"></div>
+    <div class="boot-line"></div>
+    <div class="boot-line"></div>
+    <div class="boot-line"></div>
+    <div class="boot-line"></div>
+    <div class="boot-line"></div>
+    <div class="boot-line"></div>
+    <div class="boot-line"><span class="cursor"></span></div>
+  </div>
+
+  <div id="main-content" class="container">
+    <div class="particles" id="particles-js"></div>
+
+    <header>
+      <div class="header-content">
+        <h1 class="glitch" data-text="Tymek Skrobol">Tymek Skrobol</h1>
+        <p class="tagline">Systems Developer | Rust Enthusiast | Performance Optimizer</p>
+        
+        <div class="status-bar">
+          <div class="status-item">
+            <i class="fas fa-microchip status-icon"></i>
+            <span>Systems: Online</span>
+          </div>
+          <div class="status-item">
+            <i class="fas fa-shield-alt status-icon"></i>
+            <span>Memory Safety: 100%</span>
+          </div>
+          <div class="status-item">
+            <i class="fas fa-bolt status-icon"></i>
+            <span>Performance: Optimal</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="about-content">
+        <h2><i class="fas fa-user-astronaut"></i> About Me</h2>
+        <p>
+          I'm a passionate low-level developer with a focus on building efficient, reliable, and secure systems. My expertise lies in Rust, C, and systems programming, where I combine performance optimization with modern development practices.
+        </p>
+        <p>
+          With a strong foundation in computer science and a love for solving complex problems, I specialize in creating software that pushes hardware to its limits while maintaining elegance and simplicity.
+        </p>
+        <p>
+          When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or diving into the latest systems programming research.
+        </p>
+      </div>
+      
+      <div class="about-image">
+        <div class="code-terminal floating">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <div class="terminal-dot"></div>
+              <div class="terminal-dot"></div>
+              <div class="terminal-dot"></div>
+            </div>
+            <div class="terminal-title">tymesk@rustfolio: ~</div>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line"><span class="terminal-prompt">$</span> whoami</div>
+            <div class="terminal-line">systems_developer</div>
+            <div class="terminal-line">rust_enthusiast</div>
+            <div class="terminal-line">performance_optimizer</div>
+            <div class="terminal-line"><br></div>
+            <div class="terminal-line"><span class="terminal-prompt">$</span> cat skills.txt</div>
+            <div class="terminal-line">Rust | C | Systems Design</div>
+            <div class="terminal-line">Memory Management | Concurrency</div>
+            <div class="terminal-line">Performance Optimization | Algorithms</div>
+            <div class="terminal-line"><br></div>
+            <div class="terminal-line"><span class="terminal-prompt">$</span> <span class="cursor"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2><i class="fas fa-laptop-code"></i> Core Skills</h2>
+      
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fas fa-microchip skill-icon"></i>
+          <h3 class="skill-name">Systems Programming</h3>
+          <p class="skill-description">Low-level development with focus on performance, memory management, and hardware interaction.</p>
+        </div>
+        
+        <div class="skill-card">
+          <i class="fas fa-shield-alt skill-icon"></i>
+          <h3 class="skill-name">Rust Development</h3>
+          <p class="skill-description">Building safe, concurrent, and efficient applications leveraging Rust's powerful features.</p>
+        </div>
+        
+        <div class="skill-card">
+          <i class="fas fa-tachometer-alt skill-icon"></i>
+          <h3 class="skill-name">Performance Optimization</h3>
+          <p class="skill-description">Identifying and eliminating bottlenecks to create blazing-fast software solutions.</p>
+        </div>
+        
+        <div class="skill-card">
+          <i class="fas fa-project-diagram skill-icon"></i>
+          <h3 class="skill-name">Concurrent Systems</h3>
+          <p class="skill-description">Designing and implementing parallel and distributed systems that scale efficiently.</p>
+        </div>
+        
+        <div class="skill-card">
+          <i class="fas fa-code skill-icon"></i>
+          <h3 class="skill-name">C Programming</h3>
+          <p class="skill-description">Writing clean, efficient C code for systems where Rust isn't an option.</p>
+        </div>
+        
+        <div class="skill-card">
+          <i class="fas fa-terminal skill-icon"></i>
+          <h3 class="skill-name">CLI/TUI Development</h3>
+          <p class="skill-description">Creating powerful command-line interfaces and terminal user experiences.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2><i class="fas fa-rocket"></i> Featured Projects</h2>
+      
+      <div class="project-card">
+        <div class="project-header">
+          <i class="fas fa-folder project-icon"></i>
+          <h3 class="project-title">File Explorer</h3>
+        </div>
+        <p>A modern terminal file explorer built with Rust, featuring intuitive navigation, file operations, and a customizable interface.</p>
+        
+        <div class="project-tech">
+          <span class="tech-tag">Rust</span>
+          <span class="tech-tag">TUI</span>
+          <span class="tech-tag">Crossterm</span>
+          <span class="tech-tag">File Systems</span>
+        </div>
+        
+        <div class="project-links">
+          <a href="https://github.com/SkrobolTymek/Explorator-plikow" class="project-link github-link" target="_blank">
+            <i class="fab fa-github"></i>  View Source
+          </a>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-header">
+          <i class="fas fa-globe project-icon"></i>
+          <h3 class="project-title">Browser in Rust</h3>
+        </div>
+        <p>A minimalist web browser implementation in Rust, featuring HTTP request handling, HTML parsing, and basic rendering capabilities.</p>
+        
+        <div class="project-tech">
+          <span class="tech-tag">Rust</span>
+          <span class="tech-tag">HTTP</span>
+          <span class="tech-tag">HTML Parsing</span>
+          <span class="tech-tag">Networking</span>
+        </div>
+        
+        <div class="project-links">
+          <a href="https://github.com/SkrobolTymek/browser_rust" class="project-link github-link" target="_blank">
+            <i class="fab fa-github"></i>  View Source
+          </a>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-header">
+          <i class="fas fa-tasks project-icon"></i>
+          <h3 class="project-title">Todo-cli</h3>
+        </div>
+        <p>A feature-rich terminal task manager with persistent storage, task prioritization, and customizable views built entirely in Rust.</p>
+        
+        <div class="project-tech">
+          <span class"tech-tag">Rust</span>
+          <span class="tech-tag">TUI</span>
+          <span class="tech-tag">JSON</span>
+          <span class="tech-tag">Productivity</span>
+        </div>
+        
+        <div class="project-links">
+          <a href="https://github.com/SkrobolTymek/Todo-cli" class="project-link github-link" target="_blank">
+            <i class="fab fa-github"></i>  View Source
+          </a>
+        </div>
+      </div>
+      
+      
+        <div class="project-tech">
+          <span class="tech-tag">Rust</span>
+          <span class="tech-tag">Security</span>
+          <span class="tech-tag">FFI</span>
+          <span class="tech-tag">Cryptography</span>
+        </div>
+        
+        <div class="project-links">
+          <a href="#" class="project-link github-link" target="_blank">
+            <i class="fab fa-github"></i>  View Source
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="text-align: center;">
+      <h2><i class="fas fa-paper-plane"></i> Get In Touch</h2>
+      <p>Looking for a systems developer or have an interesting project? Let's connect!</p>
+      
+      <div class="contact-methods">
+        <div class="contact-card">
+          <i class="fas fa-envelope contact-icon"></i>
+          <a href="mailto:tymoteusz.skrobol@gmail.com@example.com" class="contact-link">Email Me</a>
+        </div>
+        
+        <div class="contact-card">
+          <i class="fab fa-github contact-icon"></i>
+          <a href="https://github.com/SkrobolTymek" class="contact-link" target="_blank">GitHub</a>
+        </div>
+        
+        <div class="contact-card">
+          <i class="fab fa-linkedin contact-icon"></i>
+          <a href="https://www.linkedin.com/in/tymoteusz-skrobol-384b95361/" class="contact-link" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+          <div class="footer-logo">Rustfolio OS</div>
+          <p>Built with Rust passion and system efficiency</p>
+          <div class="social-links">
+            <a href="#" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+            <a href="#" class="social-link" target="_blank"><i class="fab fa-dev"></i></a>
+            <a href="#" class="social-link" target="_blank"><i class="fab fa-medium"></i></a>
+          </div>
+          <p>© 2025 Tymek Skrobol. All systems operational.</p>
+        </div>
+      </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
